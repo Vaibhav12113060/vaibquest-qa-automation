@@ -11,12 +11,13 @@ The application under test is **VaibQuest**, a full-stack gamified learning plat
 - **Core Functionality:** It allows users to complete "quests," submit proof of completion, and earn experience points (XP) to climb a leaderboard. Administrators have a separate dashboard to create quests and evaluate user submissions.
 - **Tech Stack:** The platform is built with a modern stack, including React.js (frontend), Node.js/Express.js (backend), and MongoDB (database).
 - **Authentication:** The system uses a secure, JWT-based authentication mechanism with role-based access control (Admin/User).
+- **Source Code:** The source code for the application is available on GitHub: [Vaibhav12113060/VaibQuest](https://github.com/Vaibhav12113060/VaibQuest)
 
 ---
 
 ## 2. Testing Environment & Strategy
 
-- **Application URL:** All tests are executed against a live, deployed instance of the application available at: `https://vaibquest.netlify.app`.
+- **Application URL:** All tests are executed against a live, deployed instance of the application available at: **https://vaibquest.netlify.app**
 - **Backend Services:** The backend is hosted on a free-tier cloud service. This can occasionally result in a slow initial server response ("cold start"). The test suite is designed to be resilient to this, with increased timeouts for initial API calls to ensure stability.
 - **Testing Approach:** The suite follows a **black-box testing** methodology. It interacts with the live application's UI to validate end-to-end user flows, from registration and login to authorization checks. This ensures that tests verify the true, integrated user experience.
 
