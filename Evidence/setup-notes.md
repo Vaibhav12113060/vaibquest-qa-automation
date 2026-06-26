@@ -97,12 +97,12 @@ Screenshots of the HTML test reports for each feature.
 
 ### Registration Test Report
 
-!RegistrationTestReport
+![Registration Test Report](./RegistrationTestReport.png)
 
 ### Login Test Report
 
-!LoginTestReport
+![Login Test Report](./LoginTestReport.png)
 
 ### Authorization Test Report
 
-!AuthorizationTestReport
+![Authorization Test Report](./AuthorizationTestReport.png)

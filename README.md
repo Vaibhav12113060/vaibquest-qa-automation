@@ -51,7 +51,7 @@ The following screenshot provides a complete overview of the test suite executio
 
 ### Complete Test Run Summary
 
-!CompleteTestReport
+![Complete Test Run Summary](./public/CompleteTestReport.png)
 
 ---
 
@@ -63,10 +63,10 @@ The following images show the detailed steps executed within individual tests, p
 
 This report details the sequence of actions for a successful user login, from filling credentials to verifying the dashboard redirection.
 
-!LoginTestSteps
+![Login Test Steps](./public/LoginTestSteps.png)
 
 ### JWT Tampering Test (Token Validation)
 
 This report illustrates the security test case for validating JWT integrity. It shows the steps to log in, tamper with the token in local storage, and verify that the application forces a logout upon detecting the invalid token.
 
-!TokenValidationSteps
+![Token Validation Steps](./public/TokenValidationSteps.png)
