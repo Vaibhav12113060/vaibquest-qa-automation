@@ -106,3 +106,21 @@ Screenshots of the HTML test reports for each feature.
 ### Authorization Test Report
 
 ![Authorization Test Report](./AuthorizationTestReport.png)
+
+---
+
+## Detailed Test Steps
+
+The following images show the detailed steps executed within individual tests, providing a granular view of the test logic and assertions.
+
+### Login Test Steps
+
+This report details the sequence of actions for a successful user login, from filling credentials to verifying the dashboard redirection.
+
+![Login Test Steps](./LoginTestSteps.png)
+
+### JWT Tampering Test (Token Validation)
+
+This report illustrates the security test case for validating JWT integrity. It shows the steps to log in, tamper with the token in local storage, and verify that the application forces a logout upon detecting the invalid token.
+
+![Token Validation Steps](./TokenValidationSteps.png)
