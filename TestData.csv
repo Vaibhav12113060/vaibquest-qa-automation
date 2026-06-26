@@ -1,0 +1,11 @@
+UserType,Name,Email,Password,ExpectedOutcome,Note
+Valid_User,Vaibhav Kumar,vaibhav@example.com,ValidPass123,Success_201,"Standard valid user"
+Duplicate_Email,John Doe,vaibhav@example.com,AnyValidPass1,Fail_409,"Email must already exist"
+Invalid_Email,Wrong User,invalid-email-format,AnyValidPass1,Fail_400,"Client-side validation should trigger"
+Weak_Password,Alice Smith,alice@example.com,12345,Fail_400,"Password length is less than the required 6 characters"
+Case_Insensitive,John Smith,VAIBHAV@EXAMPLE.COM,AnyValidPass1,Fail_409,"Server should normalize email to lowercase before checking for duplicates"
+Unicode_Name,Ji-Woo 김,jiwoo@example.com,KoreanPass123,Success_201,"System should support non-ASCII characters in names"
+Trailing_Spaces,Bob Harris ,bob@example.com ,PassWithSpaces1,Success_201,"Server should trim whitespace from inputs"
+Short_Name,Dev,dev@example.com,ValidPassword123,Fail_400,"Name length is less than the required 5 characters"
+Special_Char_Password,Security Pro,sec@example.com,Admin#@!123,Success_201,"System should handle special characters in passwords"
+XSS_Attempt,`<script>alert(1)</script>`,xss@test.com,ValidPassword123,Fail_400,"Server should sanitize inputs and reject malicious scripts"
